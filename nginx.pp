@@ -19,6 +19,7 @@ package { 'nginx':
 
 #Make sure service is running.
 service { 'nginx':
+  enable => true,
   ensure => running,
 }
 
