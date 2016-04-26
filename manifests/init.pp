@@ -1,3 +1,3 @@
 class helloworld {
-  notify { 'hello, world!': }
+  notify { 'Hello, Hal. I can't open the pod bay doors today.': }
 }
