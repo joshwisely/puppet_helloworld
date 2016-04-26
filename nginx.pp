@@ -1,18 +1,9 @@
-#Simple test.
-file { '/etc/motd':
-  ensure => file,
-  content => "Hello Hal.\n",
-  owner => 'root',
-  group => 'root',
-  mode => '0644',
-}
-
-#Install EPEL package.
+#Install EPEL package, which is needed to find the main package..
 package { 'epel-release':
   ensure => installed,
 }
 
-#Install NGINX package.
+#Install package.
 package { 'nginx':
   ensure => installed,
 }
